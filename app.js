@@ -12,7 +12,7 @@ const userRoutes = require("./routes/user");
 
 
 //Db connections
-mongoose.connect("mongodb+srv://bhivutech:Shubhampass@mern.nfve1.mongodb.net/etarkdb?retryWrites=true&w=majority", {
+mongoose.connect(process.env.DATABASE, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
