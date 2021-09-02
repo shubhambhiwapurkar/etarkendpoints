@@ -33,5 +33,5 @@ app.use("/api", userRoutes);
 
 
 app.listen(process.env.PORT, () => {
-    console.log(`app is running at ${port}`);
+    // console.log(`app is running at ${port}`);
 })
