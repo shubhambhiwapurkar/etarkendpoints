@@ -98,6 +98,6 @@ exports.isAuthenticated = (req, res, next) => {
 
 
 
-app.post("/home", auth, (req, res) => {
-    res.status(200).send("Welcome 🙌 ");
-});
+// exports.post("/home", auth, (req, res) => {
+//     res.status(200).send("Welcome 🙌 ");
+// });
