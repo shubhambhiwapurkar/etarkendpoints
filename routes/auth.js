@@ -20,7 +20,8 @@ router.post("/login", [
 
 router.get("/signout", signout);
 
-router.get("/testroute", isSignedIn, (req, res) => {
+
+router.get("/home", isSignedIn, (req, res) => {
     res.send("a protected route")
 
 });
