@@ -12,7 +12,7 @@ const userRoutes = require("./routes/user");
 
 
 //Db connections
-mongoose.connect(process.env.DATABASE, {
+mongoose.connect("mongodb+srv://bhivutech:Shubhampass>@mern.nfve1.mongodb.net/etarkdb?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
         useCreateIndex: true
@@ -29,10 +29,9 @@ app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 
 
-//port
-const port = process.env.port || 8000;
 
 
-app.listen(port, () => {
+
+app.listen(process.env.PORT, () => {
     console.log(`app is running at ${port}`);
 })
