@@ -1,5 +1,5 @@
-const auth = require("../controllers/authh");
+const auth = require("../controllers/auth");
 
-app.post("/welcome", auth, (req, res) => {
+app.post("/home", auth, (req, res) => {
     res.status(200).send("Welcome 🙌 ");
 });
