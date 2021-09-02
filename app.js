@@ -9,7 +9,7 @@ const cors = require("cors");
 //my routes
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
-// const homeRoutes = require("./routes/auth");
+const homeRoutes = require("./routes/auth");
 
 
 //Db connections
@@ -28,12 +28,12 @@ app.use(cors());
 //MY routes
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
-// app.use("/api", homeRoutes)
+app.use("/api", homeRoutes)
 
 
 
 
 
 app.listen(process.env.PORT, () => {
-    // console.log(`app is running at ${port}`);
+    console.log(`app is running at ${process.env.PORT}`);
 })
