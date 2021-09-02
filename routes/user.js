@@ -8,7 +8,7 @@ router.param("userID", getUserById);
 
 router.get("/user/:userId", isSignedIn, isAuthenticated, getUser);
 router.put("/user/:userId", isSignedIn, isAuthenticated);
-router.get("/orders/user/:userId", isSignedIn, isAuthenticated);
+
 
 
 module.exports = router;

@@ -94,12 +94,10 @@ exports.isAuthenticated = (req, res, next) => {
     next();
 };
 
-exports.isAdmin = (req, res, next) => {
-    if (req.profile.role === 0) {
-        return res.status(403).json({
-            error: "You are not Admin,Acces denied"
-        });
-    }
+//home endpoint with token only
 
-    next();
-};
+
+
+app.post("/home", auth, (req, res) => {
+    res.status(200).send("Welcome 🙌 ");
+});
