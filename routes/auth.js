@@ -22,7 +22,7 @@ router.get("/signout", signout);
 
 
 router.get("/home", isSignedIn, (req, res) => {
-    res.send("a protected route")
+    res.send("succefully logged with bearer token")
 
 });
 module.exports = router;
