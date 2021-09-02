@@ -9,7 +9,7 @@ const cors = require("cors");
 //my routes
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
-const homeRoutes = require("./routes/auth");
+const homeRoutes = require("./routes/home");
 
 
 //Db connections
